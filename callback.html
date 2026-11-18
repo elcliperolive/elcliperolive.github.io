@@ -1,0 +1,8 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>El Clipero · conectando</title>
+<style>body{margin:0;background:#0b0716;color:#f4eefc;font:16px system-ui;display:grid;place-items:center;height:100vh}</style></head>
+<body><p id="m">Conectando con El Clipero en este ordenador…</p>
+<script>
+// TikTok devuelve aquí el código de autorización; se reenvía al clipero que escucha en este mismo PC.
+location.replace("http://localhost:8723/callback/" + location.search);
+setTimeout(function(){document.getElementById("m").textContent="Si no pasa nada, comprueba que el clipero está esperando la autorización en el PC.";},4000);
+</script></body></html>
